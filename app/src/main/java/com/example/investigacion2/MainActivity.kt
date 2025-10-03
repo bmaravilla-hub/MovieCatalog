@@ -77,7 +77,7 @@ fun MovieCatalogApp(
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
-            // Barra de búsqueda - CORREGIDO
+            
             TextField(
                 value = searchText,
                 onValueChange = { searchText = it },
@@ -91,7 +91,7 @@ fun MovieCatalogApp(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(16.dp),
-                // SOLUCIÓN: Usar colors directamente sin textFieldColors
+                
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = MaterialTheme.colorScheme.surface,
                     unfocusedContainerColor = MaterialTheme.colorScheme.surface,
